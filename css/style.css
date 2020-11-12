@@ -1,0 +1,404 @@
+/* Body */
+body {
+    margin: 0em;
+    padding: 0em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lexend Deca", sans-serif;
+    color: blue;
+    font-weight: 100 !important;
+    letter-spacing: 00.03125em;
+}
+
+p {
+    font-family: "Lexend Deca", sans-serif;
+    color: rgb(50, 50, 50);
+    font-weight: 100 !important;
+    letter-spacing: 0.03125em;
+}
+
+/* Navigation */
+
+
+
+/* Welcome Banner */
+.welcomeBanner {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: hsla(240, 100%, 25%, 0.486) !important;
+}
+
+.bannerBody {
+    width: auto;
+    margin: 0% 5.25% 0% 5.25% !important;
+}
+
+.bannerBody h1 {
+    color: white;
+}
+
+.addStudent-button {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: orange !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: white !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: orange !important;
+}
+
+.addStudent-button:hover {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: white !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: orange !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: orange !important;
+}
+
+/* Student Section */
+.studentSection {
+    margin-top: 3em;
+    margin-right: 7%;
+    margin-bottom: 3em;
+    margin-left: 7%;
+}
+
+.studentCard {
+    border: none !important;
+    align-items: center;
+    width: 15em !important;
+}
+.studentCard img {
+    max-width: 100%;
+    padding: 1em;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: rgb(50, 50, 50)
+}
+
+.studentName {
+    text-align: center;
+    padding-left: 0px !important;
+}
+
+.studentCard h3 {
+    color: orange;
+}
+
+.viewStudent-button {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: orange !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: white !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: orange !important;
+}
+
+.viewStudent-button:hover {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: white !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: orange !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: orange !important;
+}
+
+/* Progress Section */
+.progressSection {
+    width: auto;
+    margin-top: 3em;
+    margin-right: 7%;
+    margin-bottom: 3em;
+    margin-left: 7%;
+}
+
+.progressDeck {
+    width: 100%;
+}
+
+.progressCard {
+    border: none !important;
+    align-items: center;
+}
+
+.progressCard img {
+    max-width: 10em;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progressCard h5 {
+    text-align: center;
+}
+
+/* Goal Progress 1 */
+#myProgress1 {
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: white;
+  }
+  
+  #myBar1 {
+    width: 1%;
+    height: 2em;
+    background-color: green;
+  }
+
+.myProgress1-button {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: green !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: white !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: green !important;
+}
+
+.myProgress1-button:hover {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: white !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: green !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: green !important;
+}
+
+.viewGoal1-button {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: orange !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: white !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: orange !important;
+}
+
+.viewGoal1-button:hover {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: white !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: orange !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: orange !important;
+}
+
+/* Goal Progress 2 */
+#myProgress2 {
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: white;
+  }
+  
+  #myBar2 {
+    width: 1%;
+    height: 2em;
+    background-color: green;
+  }
+
+.myProgress2-button {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: green !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: white !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: green !important;
+}
+
+.myProgress2-button:hover {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: white !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: green !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: green !important;
+}
+
+.viewGoal2-button {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: orange !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: white !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: orange !important;
+}
+
+.viewGoal2-button:hover {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: white !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: orange !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: orange !important;
+}
+
+/* Goal Progress 3 */
+#myProgress3 {
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: white;
+  }
+  
+  #myBar3 {
+    width: 1%;
+    height: 2em;
+    background-color: green;
+  }
+
+.myProgress3-button {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: green !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: white !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: green !important;
+}
+
+.myProgress3-button:hover {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: white !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: green !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: green !important;
+}
+
+.viewGoal3-button {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: orange !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: white !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: orange !important;
+}
+
+.viewGoal3-button:hover {
+    width: 10em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: 1em !important;
+    color: white !important;
+    padding: .65em 0em 0em 0em !important;
+    background-color: orange !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: orange !important;
+}
+
+/* Badges Section */
+.badgesSection {
+    width: auto;
+    margin-top: 3em;
+    margin-right: 7%;
+    margin-bottom: 3em;
+    margin-left: 7%;
+}
+
+.badgesDeck {
+    width: 100%;
+    align-items: center;
+}
+
+.badgesCard {
+    border: none !important;
+}
+
+.badgesCard img {
+    max-width: 10em;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.badgesCard p {
+    text-align: center;
+}
+
+/* Rewards Section */
+.rewardsSection {
+    width: auto;
+    margin-top: 3em;
+    margin-right: 7%;
+    margin-bottom: 3em;
+    margin-left: 7%;
+}
+
+.rewardsDeck {
+    width: 100%;
+}
