@@ -53,14 +53,145 @@
     <div class="card mb-3 welcomeBanner">
       <div class="card-body bannerBody">
         <h1 class="card-title">Welcome, Jovi!</h1>
-        <a href="#" class="btn btn-primary addStudent-button">+ Add Student</a>
       </div>
     </div>
   </section>
 <!-- End Welcome Banner -->  
 
 <!-- Start Student Cards --> 
-  <section class="studentSection">
+<section class="studentSection">
+  <div class="row studentHeader">
+    <div class="col-sm-3">
+      <h2>Students</h2>  
+    </div>
+    <div class="col-sm-9">
+       <a href="#" class="btn btn-primary addStudent-button">+ Add Student</a> 
+    </div>
+  </div>  
+
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card" style="border:none!important">
+        <div class="card-body">
+          <div class="card studentCard">
+            <h5 class="card-title">Sting</h5>
+            <img src="images/Shark.png" class="card-img-top" alt="Shark">
+            <div class="card-body">
+              <div class="row studentButtons">
+                <div class="addGoalButtonCard">
+                  <a href="#" class="btn btn-primary addGoal-button">+ Add Goal</a>
+                </div>
+                <div class="viewStudentButtonCard">  
+                  <a href="#" class="btn btn-primary viewStudent-button">View Student</a>
+                </div>  
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      <div class="card" style="border:none!important">
+        <div class="card-body">
+          <div class="card-group progressGroup">
+            <div class="card" style="border:none!important">
+              <h5 class="card-title">Math</h5>
+              <div class="progressCard">
+                <div class="progress progress-bar-vertical">
+                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>  
+              </div>
+                <div class="row addRemoveRow">
+                  <div class="col-sm-6">
+                    <div class="card addCard">
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary add-button">+</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card minusCard">
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary minus-button">-</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card viewGoalCard">
+                  <a href="#" class="btn btn-primary viewGoal-button">View Goal</a>
+                </div>
+            </div>
+            <div class="card"style="border:none!important">
+              <h5 class="card-title">Reading</h5>
+              <div class="progressCard">
+                <div class="progress progress-bar-vertical">
+                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>  
+              </div>
+              <div class="row addRemoveRow">
+                <div class="col-sm-6">
+                  <div class="card addCard">
+                    <div class="card-body">
+                      <a href="#" class="btn btn-primary add-button">+</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card minusCard">
+                    <div class="card-body">
+                      <a href="#" class="btn btn-primary minus-button">-</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card viewGoalCard">
+                <a href="#" class="btn btn-primary viewGoal-button">View Goal</a>
+              </div>
+            </div>
+            <div class="card" style="border:none!important">
+              <h5 class="card-title">Writing</h5>
+              <div class="progressCard">
+                <div class="progress progress-bar-vertical">
+                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>  
+              </div>
+              <div class="row addRemoveRow">
+                <div class="col-sm-6">
+                  <div class="card addCard">
+                    <div class="card-body">
+                      <a href="#" class="btn btn-primary add-button">+</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card minusCard">
+                    <div class="card-body">
+                      <a href="#" class="btn btn-primary minus-button">-</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card viewGoalCard">
+                <a href="#" class="btn btn-primary viewGoal-button">View Goal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+<!-- Start Student Cards --> 
+  <!-- <section class="studentSection">
     <h2>Students</h2> 
     <div class="card studentCard" style="width: 18rem;">
       <div class="card-body studentName">
@@ -72,11 +203,11 @@
         <a href="#" class="btn btn-primary viewStudent-button">View Student</a>
       </div>
     </div>
-  </section>
+  </section> -->
 <!-- End Student Cards -->  
 
 <!-- Start Progress Bar -->
-  <section class="progressSection">
+  <!-- <section class="progressSection">
     <h2>Progress</h2>
     <div class="card-deck progressDeck">
       <div class="card progressCard">
@@ -121,7 +252,7 @@
         </div>
       </div>
     </div>
-  </section>  
+  </section>   -->
 <!-- End Progress Bar -->
 
 <!-- Start Badges Card -->
