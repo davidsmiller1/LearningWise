@@ -1,59 +1,62 @@
-var i = 0;
-function move1() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar1");
-    var width = 10;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
-      }
-    }
+// Progress Bar //
+var mathScale=30;
+var readingScale=50;
+var writingScale=75;
+
+$(".progress-math").css("height",mathScale + "%");
+$(".progress-reading").css("height",readingScale + "%");
+$(".progress-writing").css("height",writingScale + "%");
+
+function scaleAdd(scale) {
+  // console.log(scale);
+  if(scale=="mathScale") {
+    mathScale= (mathScale==100 ? mathScale=100 :mathScale + 5);
+    return mathScale;
+  }
+  if(scale=="readingScale") {
+    readingScale= (readingScale==100 ? readingScale=100 :readingScale + 5);
+    return readingScale;
+  }
+  if(scale=="writingScale") {
+    writingScale= (writingScale==100 ? writingScale=100 :writingScale + 5);
+    return writingScale;
   }
 }
 
-var i = 0;
-function move2() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar2");
-    var width = 10;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
-      }
-    }
+function scaleMinus(scale) {
+  // console.log(scale);
+  if(scale=="mathScale") {
+    mathScale= (mathScale==0 ? mathScale=0 :mathScale - 5);
+    return mathScale;
+  }
+  if(scale=="readingScale") {
+    readingScale= (readingScale==0 ? readingScale=0 :readingScale - 5);
+    return readingScale;
+  }
+  if(scale=="writingScale") {
+    writingScale= (writingScale==0 ? writingScale=0 :writingScale - 5);
+    return writingScale;
   }
 }
 
-var i = 0;
-function move3() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar3");
-    var width = 10;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
-      }
-    }
-  }
-}
+$(".add-button").on("click", function(e) {
+  e.preventDefault();
+  progressBarClass=$(this).data("progress");
+  scale=$(this).data("scale");
+  scaleHeight=scaleAdd(scale);
+  // console.log(scale);
+  $("."+progressBarClass).css("height",scaleHeight + "%");
+
+});
+
+$(".minus-button").on("click", function(e) {
+  e.preventDefault();
+  progressBarClass=$(this).data("progress");
+  scale=$(this).data("scale");
+  scaleHeight=scaleMinus(scale);
+  // console.log(scale);
+  $("."+progressBarClass).css("height",scaleHeight + "%");
+
+});
+
+

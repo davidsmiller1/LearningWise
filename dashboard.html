@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LearningWise</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
 <body>
-<!-- Start Header -->  
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">LearningWise</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!-- Start Header --> 
+<header class="navHeader">
+  <nav class="navbar fixed-top customNavbar navbar-expand-md navbar-light bg-light">
+    <img class="navbar-brand" src="images/Logo.png" alt="LearningWise Logo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
         </li>
@@ -25,254 +25,122 @@
           <a class="nav-link" href="#">Community</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Account
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Edit</a>
-            <a class="dropdown-item" href="#">Help</a>
-            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Logout</a>
           </div>
         </li>
       </ul>
-      <ul class="navbar-nav ml-auto nav-flex-icons">
-        <li class="nav-item avatar">
-          <a class="nav-link p-0" href="#">
-            <img src="images/Jovi.png" class="rounded-circle z-depth-0"
-              alt="avatar image" height="35">
-          </a>
-        </li>
-      </ul>
     </div>
   </nav>
+</header>
 <!-- End Header -->   
 
-<!-- Start Welcome Banner -->  
-  <section>
-    <div class="card mb-3 welcomeBanner">
-      <div class="card-body bannerBody">
-        <h1 class="card-title">Welcome, Jovi!</h1>
-      </div>
+<!-- Start Welcome Banner -->
+<section class="welcomeBanner">
+  <div class="row bannerBody">
+    <div class="col-sm-9 bannerText">
+      <h1 class="card-title">Welcome, Jovi!</h1>
     </div>
-  </section>
+  </div>
+</section>
 <!-- End Welcome Banner -->  
 
 <!-- Start Student Cards --> 
 <section class="studentSection">
   <div class="row studentHeader">
-    <div class="col-sm-3">
-      <h2>Students</h2>  
-    </div>
-    <div class="col-sm-9">
-       <a href="#" class="btn btn-primary addStudent-button">+ Add Student</a> 
-    </div>
+    <h2>Your Students</h2>  
+    <a href="#" class="btn btn-primary addStudent-button">+ Add Student</a> 
   </div>  
 
   <div class="row">
-    <div class="col-sm-3">
-      <div class="card" style="border:none!important">
-        <div class="card-body">
-          <div class="card studentCard">
-            <h5 class="card-title">Sting</h5>
-            <img src="images/Shark.png" class="card-img-top" alt="Shark">
-            <div class="card-body">
-              <div class="row studentButtons">
-                <div class="addGoalButtonCard">
-                  <a href="#" class="btn btn-primary addGoal-button">+ Add Goal</a>
-                </div>
-                <div class="viewStudentButtonCard">  
-                  <a href="#" class="btn btn-primary viewStudent-button">View Student</a>
-                </div>  
-              </div>  
-            </div>
-          </div>
+
+    <div class="col-sm-3 studentGroup">
+      <div class="card studentWrap" style="border:none!important">
+        <h3 class="card-title">Steve</h3>
+          <div class="studentCard">
+            <img src="images/Dino Avatar.png" class="card-img-top" alt="Dino Avatar">
+            <div class="row studentButtonRow">
+              <a href="#" class="btn btn-primary viewStudent-button">View Student</a>
+              <a href="#" class="btn btn-primary addGoal-button">+ Add Goal</a>
+            </div>  
+          </div>  
         </div>
-      </div>
     </div>
 
     <div class="col-sm-9">
-      <div class="card" style="border:none!important">
-        <div class="card-body">
-          <div class="card-group progressGroup">
-            <div class="card" style="border:none!important">
-              <h5 class="card-title">Math</h5>
+      <div class="card-group progressGroup">
+            
+            <div class="card col-sm-4 progressWrap" style="border:none!important">
+              <h5 class="card-title">Mathlete</h5>
               <div class="progressCard">
                 <div class="progress progress-bar-vertical">
-                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-danger progress-math" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                   </div>
                 </div>  
-              </div>
-                <div class="row addRemoveRow">
-                  <div class="col-sm-6">
-                    <div class="card addCard">
-                      <div class="card-body">
-                        <a href="#" class="btn btn-primary add-button">+</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="card minusCard">
-                      <div class="card-body">
-                        <a href="#" class="btn btn-primary minus-button">-</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card viewGoalCard">
+                <div class="row progressButtonRow ">
+                  <a href="#" class="btn btn-primary minus-button" data-progress="progress-math" data-scale="mathScale">-</a>
                   <a href="#" class="btn btn-primary viewGoal-button">View Goal</a>
+                  <a href="#" class="btn btn-primary add-button" data-progress="progress-math" data-scale="mathScale">+</a>
                 </div>
+              </div>
             </div>
-            <div class="card"style="border:none!important">
-              <h5 class="card-title">Reading</h5>
+            
+            <div class="card col-sm-4 progressWrap"style="border:none!important">
+              <h5 class="card-title">Star Reader</h5>
               <div class="progressCard">
                 <div class="progress progress-bar-vertical">
-                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-danger progress-reading" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                   </div>
                 </div>  
-              </div>
-              <div class="row addRemoveRow">
-                <div class="col-sm-6">
-                  <div class="card addCard">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary add-button">+</a>
-                    </div>
-                  </div>
+                <div class="row progressButtonRow">
+                  <a href="#" class="btn btn-primary minus-button" data-progress="progress-reading" data-scale="readingScale">-</a>
+                  <a href="#" class="btn btn-primary viewGoal-button">View Goal</a>
+                  <a href="#" class="btn btn-primary add-button" data-progress="progress-reading" data-scale="readingScale">+</a>
                 </div>
-                <div class="col-sm-6">
-                  <div class="card minusCard">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary minus-button">-</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card viewGoalCard">
-                <a href="#" class="btn btn-primary viewGoal-button">View Goal</a>
               </div>
             </div>
-            <div class="card" style="border:none!important">
-              <h5 class="card-title">Writing</h5>
+            
+            <div class="card col-sm-4 progressWrap" style="border:none!important">
+              <h5 class="card-title">Writing Winner</h5>
               <div class="progressCard">
                 <div class="progress progress-bar-vertical">
-                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-danger progress-writing" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                   </div>
                 </div>  
-              </div>
-              <div class="row addRemoveRow">
-                <div class="col-sm-6">
-                  <div class="card addCard">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary add-button">+</a>
-                    </div>
-                  </div>
+                <div class="row progressButtonRow">
+                  <a href="#" class="btn btn-primary minus-button" data-progress="progress-writing" data-scale="writingScale">-</a>
+                  <a href="#" class="btn btn-primary viewGoal-button">View Goal</a>
+                  <a href="#" class="btn btn-primary add-button" data-progress="progress-writing" data-scale="writingScale">+</a>
                 </div>
-                <div class="col-sm-6">
-                  <div class="card minusCard">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-primary minus-button">-</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card viewGoalCard">
-                <a href="#" class="btn btn-primary viewGoal-button">View Goal</a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
-
-
 </section>
-
-
-
-<!-- Start Student Cards --> 
-  <!-- <section class="studentSection">
-    <h2>Students</h2> 
-    <div class="card studentCard" style="width: 18rem;">
-      <div class="card-body studentName">
-        <h3 class="card-title">Sting</h3>
-      <div>  
-      <img src="images/Shark.png" class="card-img-top" alt="Shark">
-      <div class="card-body">
-        <a href="#" class="btn btn-primary addGoal-button">+ Add Goal</a>
-        <a href="#" class="btn btn-primary viewStudent-button">View Student</a>
-      </div>
-    </div>
-  </section> -->
-<!-- End Student Cards -->  
-
-<!-- Start Progress Bar -->
-  <!-- <section class="progressSection">
-    <h2>Progress</h2>
-    <div class="card-deck progressDeck">
-      <div class="card progressCard">
-        <div class="card-body">
-          <h5 class="card-title">Mathlete</h5>
-        </div>  
-        <img src="images/Math.png" class="card-img-top" alt="Mathlete">
-        <div id="myProgress1">
-          <div id="myBar1"></div>
-        </div>
-          <a class="btn btn-primary myProgress1-button" onclick="move1()">+ Award Progress</a> 
-        <div class="card-body">
-          <a href="#" class="btn btn-primary viewGoal1-button">View Goal</a>
-        </div>
-      </div>
-
-      <div class="card progressCard">
-        <div class="card-body">
-          <h5 class="card-title">Spelling Wizard</h5>
-        </div>  
-        <img src="images/Wizard.png" class="card-img-top" alt="Wizard">
-        <div id="myProgress2">
-          <div id="myBar2"></div>
-        </div>
-          <a class="btn btn-primary myProgress2-button" onclick="move2()">+ Award Progress</a> 
-        <div class="card-body">
-          <a href="#" class="btn btn-primary viewGoal2-button">View Goal</a>
-        </div>
-      </div>
-
-      <div class="card progressCard">
-        <div class="card-body">
-          <h5 class="card-title">Star Reader</h5>
-        </div>  
-        <img src="images/Read.png" class="card-img-top" alt="Read">
-        <div id="myProgress3">
-          <div id="myBar3"></div>
-        </div>
-          <a class="btn btn-primary myProgress3-button" onclick="move3()">+ Award Progress</a> 
-        <div class="card-body">
-          <a href="#" class="btn btn-primary viewGoal3-button">View Goal</a>
-        </div>
-      </div>
-    </div>
-  </section>   -->
-<!-- End Progress Bar -->
 
 <!-- Start Badges Card -->
   <section class="badgesSection">
-    <h2>Badges</h2>
+    <h4>Steve's Badges</h4>
     <div class="card-deck badgesDeck">
         <div class="card badgesCard">
-            <img src="images/Achiever.png" class="card-img-top" alt="Achiever">
+            <img src="images/Achiever.png" alt="Achiever">
             <div class="card-body">
             <p class="card-title">Achiever Believer</p>
             </div>
         </div>
         <div class="card badgesCard">
-            <img src="images/Calculator.png" class="card-img-top" alt="Calculator">
+            <img src="images/Math.png" alt="Mathlete">
             <div class="card-body">
-            <p class="card-title">Calculator</p>
+            <p class="card-title">Mathlete</p>
             </div>
         </div>
         <div class="card badgesCard">
-            <img src="images/Time.png" class="card-img-top" alt="Time">
+            <img src="images/Time.png" alt="Time Hero">
             <div class="card-body">
             <p class="card-title">Time Hero</p>
             </div>
@@ -280,21 +148,21 @@
     </div>
     <div class="card-deck badgesDeck">
         <div class="card badgesCard">
-            <img src="images/Jump.png" class="card-img-top" alt="Jump">
+            <img src="images/Gym.png" alt="Gym Jammer">
             <div class="card-body">
             <p class="card-title">Gym Jammer</p>
             </div>
         </div>
         <div class="card badgesCard">
-            <img src="images/Award.png" class="card-img-top" alt="Award">
+            <img src="images/Award.png" alt="Scholar of the Month">
             <div class="card-body">
             <p class="card-title">Scholar of the Month</p>
             </div>
         </div>
         <div class="card badgesCard">
-            <img src="images/Friend.png" class="card-img-top" alt="Friend">
+            <img src="images/Wizard.png" alt="Spelling Wizard">
             <div class="card-body">
-            <p class="card-title">Virtue Victor</p>
+            <p class="card-title">Spelling Wizard</p>
             </div>
         </div>
     </div>
@@ -303,39 +171,62 @@
 
 <!-- Start Rewards Card -->
   <section class="rewardsSection">
-    <h2>Additional Rewards</h2>
+    <h4>Steve's Bonus Rewards</h4>
     <div class="card-deck rewardsDeck">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Ready to Reward</h5>
             </div>
             <div class="input-group-text">
-                <input type="checkbox" aria-label="Checkbox for following text input">
-                <p>Extra brocolli for dinner</p>
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                  <p>Stay up half hour later</p>
+                  <a href="#" class="btn btn-primary viewPastGoal-button">View Goal</a>
             </div>
             <div class="input-group-text">
                 <input type="checkbox" aria-label="Checkbox for following text input">
-                <p>Extra TV time</p>
+                <p>Extra half hour of TV time</p>
+                <a href="#" class="btn btn-primary viewPastGoal-button">View Goal</a>
             </div>
+            <div class="input-group-text">
+              <input type="checkbox" aria-label="Checkbox for following text input">
+              <p>Pick the game for game night</p>
+              <a href="#" class="btn btn-primary viewPastGoal-button">View Goal</a>
+          </div>
         </div>
         <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Still Completing</h5>
-            </div>
-            <div>
-                <p>Pizza</p>
-            </div>
+          <div class="card-body">
+              <h5 class="card-title">Past Rewards</h5>
+          </div>
+          <div class="input-group-text">
+              <input type="checkbox" checked>
+              <p>New toy</p>
+              <p class="text-muted">9/23/2020</p>
+              <a href="#" class="btn btn-primary viewPastGoal-button">View Goal</a>
+          </div>
+          <div class="input-group-text">
+              <input type="checkbox" checked>
+              <p>Pizza party with friend</p>
+              <p class="text-muted">10/14/2020</p>
+              <a href="#" class="btn btn-primary viewPastGoal-button">View Goal</a>
+          </div>
+          <div class="input-group-text">
+            <input type="checkbox" checked>
+            <p>Extra broccoli for dinner</p>
+            <p class="text-muted">11/01/2020</p>
+            <a href="#" class="btn btn-primary viewPastGoal-button">View Goal</a>
         </div>
+      </div>
     </div>
   </section>
 <!-- End Rewards Section -->    
 
 <!-- Start Footer -->
 <footer class="page-footer font-small stylish-color-dark pt-4">
+    <hr>
     <div class="container text-center text-md-left">
       <div class="row">
         <div class="col-md-4 mx-auto">
-          <h3 class="font-weight-bold text-uppercase mt-3 mb-4">LearningWise</h3>
+          <img class="navbar-brand" src="images/Logo.png" alt="LearningWise Logo">
         </div>
         <hr class="clearfix w-100 d-md-none">
         <div class="col-md-2 mx-auto">
@@ -352,39 +243,20 @@
       </div>
     </div>
     <hr>
-    <ul class="list-unstyled list-inline text-center py-2">
-      <li class="list-inline-item">
-        <h5 class="mb-1">Register for free</h5>
-      </li>
-      <li class="list-inline-item">
-        <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
-      </li>
-    </ul>
-    <hr>
     <ul class="list-unstyled list-inline text-center">
       <li class="list-inline-item">
         <a class="btn-floating btn-fb mx-1">
-          <i class="fab fa-facebook-f"> </i>
+          <img src="images/Facebook.png" alt="Facebook">
         </a>
       </li>
       <li class="list-inline-item">
         <a class="btn-floating btn-tw mx-1">
-          <i class="fab fa-twitter"> </i>
+          <img src="images/Instagram.png" alt="Instagram">
         </a>
       </li>
       <li class="list-inline-item">
         <a class="btn-floating btn-gplus mx-1">
-          <i class="fab fa-google-plus-g"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-li mx-1">
-          <i class="fab fa-linkedin-in"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-dribbble mx-1">
-          <i class="fab fa-dribbble"> </i>
+          <img src="images/Twitter.png" alt="Twitter">
         </a>
       </li>
     </ul>
@@ -392,10 +264,11 @@
   </footer>
 <!-- End Footer -->
 
+<!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <script src="js/index.js"></script>
+
 </body>
-<script
-src="https://code.jquery.com/jquery-3.4.1.js"
-integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-crossorigin="anonymous"></script>
-<script src="js/index.js"></script>
 </html>
