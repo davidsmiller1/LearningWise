@@ -44,15 +44,21 @@ p {
 /* Welcome Banner */
 .welcomeBanner {
     width: 100%;
+    background-image: url(../images/Welcome\ Banner\ Background.png);
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: hsla(240, 100%, 25%, 0.486) !important;
     justify-content: center;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bannerBody {
     width: 100%;
-    margin: 8em 0em 1em 0em !important;
+    margin: 10em 0em 3em 0em !important;
 }
 
 .bannerText h1 {
@@ -91,12 +97,12 @@ p {
     font-family: "Lexend Deca", sans-serif;
     font-weight: 100 !important;
     font-size: .85em !important;
-    color: green !important;
+    color: #3CA037 !important;
     padding: .65em 0em 0em 0em !important;
     background-color: white !important;
     border: 2px solid !important;
     border-radius: 10px !important;
-    border-color: green !important;
+    border-color: #3CA037 !important;
 }
 
 .addStudent-button:hover {
@@ -108,10 +114,10 @@ p {
     font-size: .85em !important;
     color: white !important;
     padding: .65em 0em 0em 0em !important;
-    background-color: green !important;
+    background-color: #3CA037 !important;
     border: 2px solid !important;
     border-radius: 10px !important;
-    border-color: green !important;
+    border-color: #3CA037 !important;
 }
 
 /* Student Section */
@@ -128,20 +134,44 @@ p {
     display: inline-flex;
 }
 
+.studentName {
+    text-align: left;
+}
+
+.studentName h3 {
+    margin: 0em 0em .5em .2em !important;
+    float: left;
+}
+
+.editAvatar-button {
+    background-color: transparent;
+    color: rgb(50, 50, 50);
+    padding: .5em .5em;
+    cursor: pointer;
+    transition: transform .2s; 
+    float: right;
+}
+
+.editAvatar-button:hover {
+    transform: scale(1.5);
+}  
+
 .studentCard {
     align-items: center;
     max-width: 15em;
     margin-left: auto !important;
     margin-right: auto !important;
+    position: relative;
 }
 
 .studentCard img {
     width: 15em;
     padding: 2em .5em 2em .5em;
-    border: 2px solid;
-    border-radius: 10px;
-    border-color: rgb(50, 50, 50);
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: 4px;
     margin: 0em 0em 1em 0em;
+    width: 100%;
+    height: auto;
 }
 
 .studentButtonRow {
@@ -160,12 +190,12 @@ p {
     font-family: "Lexend Deca", sans-serif;
     font-weight: 100 !important;
     font-size: .85em !important;
-    color: green !important;
+    color: #3CA037 !important;
     padding: .65em 0em 0em 0em !important;
     background-color: white !important;
     border: 2px solid !important;
     border-radius: 10px !important;
-    border-color: green !important;
+    border-color: #3CA037 !important;
 }
 
 .addGoal-button:hover {
@@ -177,13 +207,13 @@ p {
     font-size: .85em !important;
     color: white !important;
     padding: .65em 0em 0em 0em !important;
-    background-color: green !important;
+    background-color: #3CA037 !important;
     border: 2px solid !important;
     border-radius: 10px !important;
-    border-color: green !important;
+    border-color: #3CA037 !important;
 }
 
-/* View Student Button */
+/* View Student Accordian */
 .viewStudent-button {
     margin: 0em .25em 0em .25em;
     width: 8em;
@@ -191,12 +221,12 @@ p {
     font-family: "Lexend Deca", sans-serif;
     font-weight: 100 !important;
     font-size: .85em !important;
-    color: orange !important;
-    padding: .65em 0em 0em 0em !important;
+    color: #FA850C !important;
+    padding: .2em 0em 0em 0em !important;
     background-color: white !important;
     border: 2px solid !important;
     border-radius: 10px !important;
-    border-color: orange !important;
+    border-color: #FA850C !important;
 }
 
 .viewStudent-button:hover {
@@ -207,11 +237,11 @@ p {
     font-weight: 100 !important;
     font-size: .85em !important;
     color: white !important;
-    padding: .65em 0em 0em 0em !important;
-    background-color: orange !important;
+    padding: .2em 0em 0em 0em !important;
+    background-color: #FA850C !important;
     border: 2px solid !important;
     border-radius: 10px !important;
-    border-color: orange !important;
+    border-color: #FA850C !important;
 } 
 
 /* Progress Section */
@@ -252,16 +282,16 @@ p {
 }
 
 .progress-math {
-    background-color: blue;
+    background-color: #ADE1FE;
     height: 50%;
 }
 
 .progress-reading {
-    background-color: red;
+    background-color: #ADE1FE;
 }
 
 .progress-writing {
-    background-color: purple;
+    background-color: #ADE1FE;
 }
 
 /* Add Minus View Button Row */
@@ -309,12 +339,12 @@ p {
     height: 3em;
     font-family: "Lexend Deca", sans-serif;
     font-size: .85em !important;
-    color: green !important;
+    color: #3CA037 !important;
     padding: .65em 0em 0em 0em !important;
     background-color: white !important;
     border: 2px solid !important;
     border-radius: 10px !important;
-    border-color: green !important;
+    border-color: #3CA037 !important;
 }
 
 .add-button:hover {
@@ -325,10 +355,10 @@ p {
     font-size: .85em !important;
     color: white !important;
     padding: .65em 0em 0em 0em !important;
-    background-color: green !important;
+    background-color: #3CA037 !important;
     border: 2px solid !important;
     border-radius: 10px !important;
-    border-color: green !important;
+    border-color: #3CA037 !important;
 }
 
 /* View Goal Button */
@@ -356,16 +386,16 @@ p {
     font-size: .85em !important;
     color: white !important;
     padding: .65em 0em 0em 0em !important;
-    background-color: orange !important;
+    background-color: #FA850C !important;
     border: 2px solid !important;
     border-radius: 10px !important;
-    border-color: orange !important;
+    border-color: #FA850C !important;
 }
 
 /* Badges Section */
 .badgesSection {
     width: auto;
-    margin-top: 3em;
+    margin-top: 0em;
     margin-right: 7%;
     margin-bottom: 3em;
     margin-left: 7%;
@@ -390,6 +420,10 @@ p {
     margin-right: auto;
     max-width: 6em;
     padding: .025em;
+    background-color: #fafafa;
+    border: 2px solid white;
+    border-radius: 20em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
 .badgesCard p {
@@ -413,30 +447,63 @@ p {
     width: 100%;
 }
 
-.rewardsSection p {
-    padding: .75em 0em 0em .75em;
+.rewardsCard {
+    border: 2px solid rgba(0,0,0,.125);
+    padding: .5em;
+}
+
+.checkboxRow {
+    padding: 1em 1em 1em 1em;
+    margin: .5em 0em .5em 0em;
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: 4px;
+}
+
+.custom-checkbox {
+    margin: 0;
+    top: 20%;
+    display: inline-block;
+}
+
+.custom-control-label:before {
+    background-color:#e9ecef;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color:green;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='white' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+  }
+
+.custom-checkbox label {
+    font-family: "Lexend Deca", sans-serif;
+    color: rgb(50, 50, 50);
+    font-weight: 100 !important;
+    letter-spacing: 0.03125em;
+}
+
+.pastGoalButtonBox {
+    float: right !important;
 }
 
 .viewPastGoal-button {
-    float: right !important;
-    display: block;
     margin: 0em .25em 0em .25em;
     width: 8em;
     height: 3em;
     font-family: "Lexend Deca", sans-serif;
     font-weight: 100 !important;
     font-size: .85em !important;
-    color: orange !important;
+    color: #FA850C !important;
     padding: .65em 0em 0em 0em !important;
     background-color: white !important;
     border: 2px solid !important;
     border-radius: 10px !important;
-    border-color: orange !important;
+    border-color: #FA850C !important;
 }
 
 .viewPastGoal-button:hover {
-    float: right !important;
-    display: block;
     margin: 0em .25em 0em .25em;
     width: 8em;
     height: 3em;
@@ -445,13 +512,20 @@ p {
     font-size: .85em !important;
     color: white !important;
     padding: .65em 0em 0em 0em !important;
-    background-color: orange !important;
+    background-color: #FA850C !important;
     border: 2px solid !important;
     border-radius: 10px !important;
-    border-color: orange !important;
+    border-color: #FA850C !important;
 }
 
 /* Footer */
 .list-unstyled img {
     max-width: 2em;
 }
+
+.footerLinks h6 {
+    padding-top: 1.25em;
+}
+
+
+

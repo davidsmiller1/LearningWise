@@ -59,4 +59,46 @@ $(".minus-button").on("click", function(e) {
 
 });
 
+// Test Reward Section //
+$("#enter").on("click", function(){
+  var task = $("#todoItem").val()
+  $("#todoList").append("<div class='task'>" + task + "<div class='x fas fa-times'></div></div>");
+});
+
+$(document).on("click", ".x", function(){
+  $(this).parent().remove();
+});
+
+$(document).on("click", ".task", function(){
+  $(this).toggleClass("done");
+  if ($(this).hasClass("done")){
+      $(this).find("div").removeClass("fa-times");
+      $(this).find("div").addClass("fa-check");
+  }
+  else {
+      $(this).find("div").addClass("fa-times");
+      $(this).find("div").removeClass("fa-check");
+  }    
+});
+
+// Dashboard Accordian //
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
 
