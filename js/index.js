@@ -59,28 +59,6 @@ $(".minus-button").on("click", function(e) {
 
 });
 
-// Test Reward Section //
-$("#enter").on("click", function(){
-  var task = $("#todoItem").val()
-  $("#todoList").append("<div class='task'>" + task + "<div class='x fas fa-times'></div></div>");
-});
-
-$(document).on("click", ".x", function(){
-  $(this).parent().remove();
-});
-
-$(document).on("click", ".task", function(){
-  $(this).toggleClass("done");
-  if ($(this).hasClass("done")){
-      $(this).find("div").removeClass("fa-times");
-      $(this).find("div").addClass("fa-check");
-  }
-  else {
-      $(this).find("div").addClass("fa-times");
-      $(this).find("div").removeClass("fa-check");
-  }    
-});
-
 // Dashboard Accordian //
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -101,4 +79,39 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// Add Goal Modal //
+$(document).ready(function(){
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })
+  
+    var date_input = $('input[name="date"]'); //our date input has the name "date"
+  
+    console.log("--> Selected the date input: ", date_input);
+  
+    var container = $('.bootstrap-iso form').length > 0 
+    ? $('.bootstrap-iso form').parent() 
+    : "body";
+  
+    var options={
+      format: 'mm/dd/yyyy',
+      container: container,
+      todayHighlight: true,
+      autoclose: true,
+    };
+  
+    date_input.datepicker(options);
+    
+  })
+  
+  // Material Select Initialization //
+  $(document).ready(function() {
+    $('.mdb-select').materialSelect();
+    });
+  
+  $(".thumbnail").on("click",function (){
+    $(".thumbnail").css("border", "5px solid transparent")
+      $(this).css("border", "5px solid #FA850C")
+  
+  })
 

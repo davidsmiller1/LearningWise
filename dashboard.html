@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="css/fontawesome/css/all.css" type="text/css" rel="stylesheet">
+
+    <!-- Hotjar Tracking Code for https://davidsmiller1.github.io/learningwise/dashboard -->
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2105392,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 
 <body>
@@ -59,7 +71,7 @@
 
       <div class="row">
 
-        <div class="col-sm-3 studentGroup">
+        <div class="col-lg-3 studentGroup">
           <div class="card studentWrap" style="border:none!important">
             <div class="studentName">
               <h3 class="card-title">Steve</h3>
@@ -72,15 +84,16 @@
               <button class="btn btn-primary viewStudent-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 View Student
               </button>
-              <a href="#" class="btn btn-primary addGoal-button">+ Add Goal</a>
+              <button class="btn btn-primary addGoal-button" data-toggle="modal" data-target="#exampleModal"
+              data-whatever="@getbootstrap">+ Add Goal</button>
             </div>   
           </div>
         </div>
 
-        <div class="col-sm-9">
+        <div class="col-lg-9">
           <div class="card-group progressGroup">
                 
-                <div class="card col-sm-4 progressWrap" style="border:none!important">
+                <div class="card col-md-12 progressWrap" style="border:none!important">
                   <h5 class="card-title">Mathlete</h5>
                   <div class="progressCard">
                     <div class="progress progress-bar-vertical">
@@ -95,7 +108,7 @@
                   </div>
                 </div>
                 
-                <div class="card col-sm-4 progressWrap"style="border:none!important">
+                <div class="card col-md-12 progressWrap"style="border:none!important">
                   <h5 class="card-title">Star Reader</h5>
                   <div class="progressCard">
                     <div class="progress progress-bar-vertical">
@@ -110,7 +123,7 @@
                   </div>
                 </div>
                 
-                <div class="card col-sm-4 progressWrap" style="border:none!important">
+                <div class="card col-md-12 progressWrap" style="border:none!important">
                   <h5 class="card-title">Writing Winner</h5>
                   <div class="progressCard">
                     <div class="progress progress-bar-vertical">
@@ -199,8 +212,8 @@
 
             <row class="checkboxRow">
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Extra half hour of TV time</label>
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">Extra half hour of TV time</label>
               </div>
               <div class="pastGoalButtonBox">
                 <a href="#" class="btn btn-primary viewPastGoal-button">View Goal</a>
@@ -209,8 +222,8 @@
 
             <row class="checkboxRow">
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Pick the game for family game night</label>
+                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                <label class="custom-control-label" for="customCheck3">Pick the game for family game night</label>
               </div>
               <div class="pastGoalButtonBox">
                 <a href="#" class="btn btn-primary viewPastGoal-button">View Goal</a>
@@ -226,8 +239,8 @@
 
             <row class="checkboxRow">
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" checked class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">New toy</label>
+                <input type="checkbox" checked class="custom-control-input" id="customCheck4">
+                <label class="custom-control-label" for="customCheck4">New toy</label>
               </div>
               <div class="pastGoalButtonBox">
                 <a href="#" class="btn btn-primary viewPastGoal-button">View Goal</a>
@@ -236,8 +249,8 @@
 
             <row class="checkboxRow">
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" checked class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Pizza party with friend</label>
+                <input type="checkbox" checked class="custom-control-input" id="customCheck5">
+                <label class="custom-control-label" for="customCheck5">Pizza party with friend</label>
               </div>
               <div class="pastGoalButtonBox">
                 <a href="#" class="btn btn-primary viewPastGoal-button">View Goal</a>
@@ -246,8 +259,8 @@
 
             <row class="checkboxRow">
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" checked class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Extra broccoli for dinner</label>
+                <input type="checkbox" checked class="custom-control-input" id="customCheck6">
+                <label class="custom-control-label" for="customCheck6">Extra broccoli for dinner</label>
               </div>
               <div class="pastGoalButtonBox">
                 <a href="#" class="btn btn-primary viewPastGoal-button">View Goal</a>
@@ -267,7 +280,7 @@
     <hr>
     <div class="container text-center text-md-left">
       <div class="row footerLinks">
-        <div class="col-md-4 mx-auto">
+        <div class="col-md-6 mx-auto">
           <img class="navbar-brand" src="images/Logo.png" alt="LearningWise Logo">
         </div>
         <hr class="clearfix w-100 d-md-none">
@@ -307,9 +320,147 @@
   </footer>
 <!-- End Footer -->
 
+        <!-- Start Add Goal Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Goal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Goal Name: </label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Task to be completed:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                  <label class="mdb-main-label">Goal Value: </label>
+                  <select class="mdb-select md-form colorful-select dropdown-primary">
+                    <option value="1">1 Point</option>
+                    <option value="2">2 Points</option>
+                    <option value="3">3 Points</option>
+                    <option value="4">4 Points</option>
+                    <option value="5">5 Points</option>
+                    <option value="1">6 Point</option>
+                    <option value="2">7 Points</option>
+                    <option value="3">8 Points</option>
+                    <option value="4">9 Points</option>
+                    <option value="5">10 Points</option>
+                  </select>
+                  
+                  <form method="post">
+                    <div class="form-group">
+                      <!-- Date input -->
+                      <label class="control-label" for="date">Start Date</label>
+                      <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text" />
+                    </div>
+                    <div class="form-group">
+                      <!-- Date input -->
+                      <label class="control-label" for="date">End Date</label>
+                      <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text" />
+                    </div>
+                  </form>
+            
+                  <h6>Select Goal Badge</h6>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="thumbnail">
+                          <img src="images/Group_68.png" alt="Speed" class="badges" >
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="thumbnail">
+                          <img src="images/Group_67.png" alt="Climbing" class="badges">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="thumbnail">
+                          <img src="images/Group_69.png" alt="Reading" class="badges">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="thumbnail">
+                          <img src="images/Group_70.png" alt="Mathlete" class="badges">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="thumbnail">
+                          <img src="images/Group_71.png" alt="Wizard" class="badges" >
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="thumbnail">
+                          <img src="images/Group_72.png" alt="Sports" class="badges">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="thumbnail">
+                          <img src="images/Group_73.png" alt="Worldly" class="badges">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="thumbnail">
+                          <img src="images/Group_75.png" alt="Award" class="badges">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="thumbnail">
+                          <img src="images/Group_74.png" alt="Music" class="badges">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Additional Goal Reward: (Optional)</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+              </div>
+      
+              </form>
+      
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Complete Goal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- End Add Goal Modal -->
+
 <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Date-Picker Plugin -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
 
   <script src="js/index.js"></script>
 

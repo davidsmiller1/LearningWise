@@ -91,7 +91,7 @@ p {
 
 /* Add Student Button */
 .addStudent-button {
-    margin: 0em .25em 0em .25em;
+    margin: 0em .125em 0em .125em;
     width: 8em;
     height: 3em;
     font-family: "Lexend Deca", sans-serif;
@@ -106,7 +106,7 @@ p {
 }
 
 .addStudent-button:hover {
-    margin: 0em .25em 0em .25em;
+    margin: 0em .125em 0em .125em;
     width: 8em;
     height: 3em;
     font-family: "Lexend Deca", sans-serif;
@@ -123,7 +123,6 @@ p {
 /* Student Section */
 .studentGroup {
     padding: 0px !important;
-    float: left !important;
 }
 
 .studentWrap {
@@ -158,10 +157,9 @@ p {
 
 .studentCard {
     align-items: center;
-    max-width: 15em;
+    max-width: 20em;
     margin-left: auto !important;
     margin-right: auto !important;
-    position: relative;
 }
 
 .studentCard img {
@@ -176,22 +174,23 @@ p {
 
 .studentButtonRow {
     max-height: 5em;
+    min-width: 224px;
     margin-left: auto !important;
     margin-right: auto !important;
     text-align: center;
-    padding: 0em 0em 0em .125em !important;
+    padding: 0px !important;
 }
 
 /* Add Goal Button */
 .addGoal-button {
-    margin: 0em .25em 0em .25em;
+    margin: 0em 0em 0em .25em;
     width: 8em;
     height: 3em;
     font-family: "Lexend Deca", sans-serif;
     font-weight: 100 !important;
     font-size: .85em !important;
     color: #3CA037 !important;
-    padding: .65em 0em 0em 0em !important;
+    padding: .2em 0em 0em 0em !important;
     background-color: white !important;
     border: 2px solid !important;
     border-radius: 10px !important;
@@ -199,23 +198,37 @@ p {
 }
 
 .addGoal-button:hover {
-    margin: 0em .25em 0em .25em;
+    margin: 0em 0em 0em .25em;
     width: 8em;
     height: 3em;
     font-family: "Lexend Deca", sans-serif;
     font-weight: 100 !important;
     font-size: .85em !important;
     color: white !important;
-    padding: .65em 0em 0em 0em !important;
+    padding: .2em 0em 0em 0em !important;
     background-color: #3CA037 !important;
     border: 2px solid !important;
     border-radius: 10px !important;
     border-color: #3CA037 !important;
 }
 
+/* Add Goal Modal */
+.modal {
+    background-color: transparent;
+    font-family: "Lexend Deca, sans-serif"
+}
+
+.badges {
+    max-width: 100%;
+}
+
+.thumbnail {
+    border: 5px solid transparent;
+}
+
 /* View Student Accordian */
 .viewStudent-button {
-    margin: 0em .25em 0em .25em;
+    margin: 0em .125em 0em 0em;
     width: 8em;
     height: 3em;
     font-family: "Lexend Deca", sans-serif;
@@ -230,7 +243,7 @@ p {
 }
 
 .viewStudent-button:hover {
-    margin: 0em .25em 0em .25em;
+    margin: 0em .125em 0em 0em;
     width: 8em;
     height: 3em;
     font-family: "Lexend Deca", sans-serif;
@@ -247,8 +260,7 @@ p {
 /* Progress Section */
 .progressWrap {
     padding: 0px !important;
-    margin-top: 40px;
-    max-width: 25em;
+    margin: 2.5em .3125em .3125em 0em;
     display: inline-flex;
 }
 
@@ -259,16 +271,19 @@ p {
 .progressCard {
     align-items: center;
     max-width: 20em;
+    min-width: 170px;
     margin-left: auto !important;
     margin-right: auto !important;
     margin-bottom: 2em;
 }
 
 /* Progress Bar */
+.progress {
+    margin: 0px 15px;
+}
+
 .progress-bar-vertical {
-    width: 17.5em;
     min-height: 27em;
-    display: flex;
     align-items: flex-end;
     padding: 0px;
     margin-bottom: 1em;
@@ -299,96 +314,96 @@ p {
     max-height: 5em;
     margin-left: auto !important;
     margin-right: auto !important;
+    padding: 0px 0px 0px 11px;
     text-align: center;
-    padding: 0em !important;
 }
 
 /* Minus Button */
 .minus-button {
-    margin: 0em .25em 0em .25em;
-    width: 3em;
-    height: 3em;
+    margin: 0em .25em 0em 0em;
+    width: 2em;
+    height: 2em;
     font-family: "Lexend Deca", sans-serif;
     font-size: .85em !important;
     color: red !important;
-    padding: .65em 0em 0em 0em !important;
+    padding: .15em 0em 0em 0em !important;
     background-color: white !important;
     border: 2px solid !important;
-    border-radius: 10px !important;
+    border-radius: 8px !important;
     border-color: red !important;
 }
 
 .minus-button:hover {
-    margin: 0em .25em 0em .25em;
-    width: 3em;
-    height: 3em;
+    margin: 0em .25em 0em 0em;
+    width: 2em;
+    height: 2em;
     font-family: "Lexend Deca", sans-serif;
     font-size: .85em !important;
     color: white !important;
-    padding: .65em 0em 0em 0em !important;
+    padding: .15em 0em 0em 0em !important;
     background-color: red !important;
     border: 2px solid !important;
-    border-radius: 10px !important;
+    border-radius: 8px !important;
     border-color: red !important;
 }
 
 /* Add Button */
 .add-button {
-    margin: 0em .25em 0em .25em;
-    width: 3em;
-    height: 3em;
+    margin: 0em 0em 0em .25em;
+    width: 2em;
+    height: 2em;
     font-family: "Lexend Deca", sans-serif;
     font-size: .85em !important;
     color: #3CA037 !important;
-    padding: .65em 0em 0em 0em !important;
+    padding: .15em 0em 0em 0em !important;
     background-color: white !important;
     border: 2px solid !important;
-    border-radius: 10px !important;
+    border-radius: 8px !important;
     border-color: #3CA037 !important;
 }
 
 .add-button:hover {
-    margin: 0em .25em 0em .25em;
-    width: 3em;
-    height: 3em;
+    margin: 0em 0em 0em .25em;
+    width: 2em;
+    height: 2em;
     font-family: "Lexend Deca", sans-serif;
     font-size: .85em !important;
     color: white !important;
-    padding: .65em 0em 0em 0em !important;
+    padding: .15em 0em 0em 0em !important;
     background-color: #3CA037 !important;
     border: 2px solid !important;
-    border-radius: 10px !important;
+    border-radius: 8px !important;
     border-color: #3CA037 !important;
 }
 
 /* View Goal Button */
 .viewGoal-button {
     margin: 0em .25em 0em .25em;
-    width: 8em;
-    height: 3em;
+    width: 78px;
+    height: 2em;
     font-family: "Lexend Deca", sans-serif;
     font-weight: 100 !important;
     font-size: .85em !important;
     color: orange !important;
-    padding: .65em 0em 0em 0em !important;
+    padding: .15em 0em 0em 0em !important;
     background-color: white !important;
     border: 2px solid !important;
-    border-radius: 10px !important;
+    border-radius: 8px !important;
     border-color: orange !important;
 }
 
 .viewGoal-button:hover {
     margin: 0em .25em 0em .25em;
-    width: 8em;
-    height: 3em;
+    width: 78px;
+    height: 2em;
     font-family: "Lexend Deca", sans-serif;
     font-weight: 100 !important;
     font-size: .85em !important;
     color: white !important;
-    padding: .65em 0em 0em 0em !important;
+    padding: .15em 0em 0em 0em !important;
     background-color: #FA850C !important;
     border: 2px solid !important;
-    border-radius: 10px !important;
+    border-radius: 8px !important;
     border-color: #FA850C !important;
 }
 
@@ -527,5 +542,8 @@ p {
     padding-top: 1.25em;
 }
 
-
-
+/* Media Queries */
+/* @media only screen and (max-width: 768px){
+    .navBar-brand {
+      width: 200px;
+    } */
