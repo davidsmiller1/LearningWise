@@ -174,7 +174,7 @@ p {
 
 .studentButtonRow {
     max-height: 5em;
-    min-width: 224px;
+    min-width: 225px;
     margin-left: auto !important;
     margin-right: auto !important;
     text-align: center;
@@ -215,7 +215,7 @@ p {
 /* Add Goal Modal */
 .modal {
     background-color: transparent;
-    font-family: "Lexend Deca, sans-serif"
+    font-family: "Lexend Deca", sans-serif;
 }
 
 .badges {
@@ -226,9 +226,71 @@ p {
     border: 5px solid transparent;
 }
 
+/* Close Button */
+.close-button {
+    margin: 0em .125em 0em 0em;
+    width: 8em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: .85em !important;
+    color: rgb(50, 50, 50) !important;
+    padding: .2em 0em 0em 0em !important;
+    background-color: white !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: rgb(50, 50, 50) !important;
+}
+
+.close-button:hover {
+    margin: 0em .125em 0em 0em;
+    width: 8em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: .85em !important;
+    color: white !important;
+    padding: .2em 0em 0em 0em !important;
+    background-color: rgb(50, 50, 50) !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: rgb(50, 50, 50) !important;
+} 
+
+/* Complete Button */
+.complete-button {
+    margin: 0em 0em 0em .25em;
+    width: 8em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: .85em !important;
+    color: #3CA037 !important;
+    padding: .2em 0em 0em 0em !important;
+    background-color: white !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: #3CA037 !important;
+}
+
+.complete-button:hover {
+    margin: 0em 0em 0em .25em;
+    width: 8em;
+    height: 3em;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100 !important;
+    font-size: .85em !important;
+    color: white !important;
+    padding: .2em 0em 0em 0em !important;
+    background-color: #3CA037 !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+    border-color: #3CA037 !important;
+} 
+
 /* View Student Accordian */
 .viewStudent-button {
-    margin: 0em .125em 0em 0em;
+    margin: 0em .25em 0em 0em;
     width: 8em;
     height: 3em;
     font-family: "Lexend Deca", sans-serif;
@@ -243,7 +305,7 @@ p {
 }
 
 .viewStudent-button:hover {
-    margin: 0em .125em 0em 0em;
+    margin: 0em .25em 0em 0em;
     width: 8em;
     height: 3em;
     font-family: "Lexend Deca", sans-serif;
@@ -474,6 +536,11 @@ p {
     border-radius: 4px;
 }
 
+.checkboxBox {
+    display: inline-flex;
+    max-width: 350px;
+}
+
 .custom-checkbox {
     margin: 0;
     top: 20%;
@@ -504,7 +571,7 @@ p {
 }
 
 .viewPastGoal-button {
-    margin: 0em .25em 0em .25em;
+    margin: .5em .25em 0em .25em;
     width: 8em;
     height: 3em;
     font-family: "Lexend Deca", sans-serif;
@@ -519,7 +586,7 @@ p {
 }
 
 .viewPastGoal-button:hover {
-    margin: 0em .25em 0em .25em;
+    margin: .5em .25em 0em .25em;
     width: 8em;
     height: 3em;
     font-family: "Lexend Deca", sans-serif;
@@ -543,7 +610,10 @@ p {
 }
 
 /* Media Queries */
-/* @media only screen and (max-width: 768px){
-    .navBar-brand {
-      width: 200px;
-    } */
+@media only screen and (max-width:991px){
+    .studentWrap {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }     
+}

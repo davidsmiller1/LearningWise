@@ -104,14 +104,14 @@ $(document).ready(function(){
     
   })
   
-  // Material Select Initialization //
-  $(document).ready(function() {
-    $('.mdb-select').materialSelect();
-    });
+// Material Select Initialization //
+$(document).ready(function() {
+  $('.mdb-select').materialSelect();
+  });
   
-  $(".thumbnail").on("click",function (){
-    $(".thumbnail").css("border", "5px solid transparent")
-      $(this).css("border", "5px solid #FA850C")
+$(".thumbnail").on("click",function (){
+  $(".thumbnail").css("border", "5px solid transparent")
+    $(this).css("border", "5px solid #FA850C")
   
   })
 
